@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f8f4; /* Latar belakang putih kehijauan (soft green) */
+            color: #333; /* Warna teks gelap */
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden; /* Menyembunyikan scrollbar horizontal */
+            position: relative;
+        }
+
+        /* Background yang bergerak */
+        .background {
+            background-image: url('polabil.jpg'); /* Gambar background */
+            background-size: cover;
+            background-position: center;
+            animation: moveBackground 10s linear infinite;
+            height: 100vh; /* Mengisi seluruh tinggi layar */
+            position: absolute; /* Pastikan background di belakang elemen lainnya */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1; /* Pastikan background berada di bawah semua elemen lainnya */
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 100%;
+            }
+        }
+
+        /* Navbar tetap ada */
+        .navbar {
+            background-color: #f1f1f1;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #333 !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .card-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 1; /* Pastikan card berada di atas background */
+        }
+
+        .card-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 20px auto;  /* Memusatkan gambar */
+    display: block;  /* Pastikan gambar diatur sebagai block dan otomatis memusatkan */
+}
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .icon {
+            color: #469f89;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .icon:hover {
+            color: #00b0ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: whitesmoke;
+            background-color: #00b0ff;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Background dengan gambar bergerak -->
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pola Bilangan Kelas 8</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="kelas8.php">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://wordwall.net/play/83307/109/237">Kuis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="latihan1.html">Latihan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lemker1.html">Lembar Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Card -->
+    <div class="card-container">
+        <img class="card-img-top" src="foto.jpeg" alt="Foto Saya">
+        <div class="card-body">
+            <h2 class="card-title">Rini Rahmawati_E1R022087</h2>
+            <p class="card-text">Website ini dibuat untuk membantu siswa kelas 8 dalam memahami konsep pola bilangan dengan cara yang menarik dan interaktif.</p>
+            <p><strong>Pendidikan:</strong> S1 Pendidikan Matematika Universitas Mataram</p>
+            <p><strong>Nomor HP:</strong> +62 823-4109-6726</p>
+            <p><strong>Email:</strong> rinirahmawatilk07@gmail.com</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rinirahmawati92" target="_blank">@rinirahmawati92</a></p>
+            <p><strong>Hobi:</strong> Membaca Buku, Suka Alam, Jalan Kaki</p>
+            <p><strong>Alamat:</strong> Kekalik Jaya, Mataram NTB</p>
+            <div>
+                <a href="#" class="icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rinirahmawati92" class="icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rini Rahmawati | Semua Hak Cipta Dilindungi</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
